@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Get Started",
@@ -23,27 +23,19 @@
           {
             "group": "Essentials",
             "pages": [
-              "essentials/task-guidelines"
+              "essentials/task-guidelines",
+              "essentials/prompting-tips"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Enterprise",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Enterprise Docs",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "enterprise/introduction"
             ]
           }
         ]
