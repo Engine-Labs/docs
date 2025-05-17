@@ -17,12 +17,11 @@ Give your team a name.
 
 Engine works with GitHub and GitLab. You can only link one git provider at a time.
 
-You can allow access to all repos or only specific repos during the auth flow. If you want to update these permissions later navigate to the Engine Labs application in your git provider's settings.
+You can allow access to all repos or only specific repos during the auth flow. If you want to update these permissions later, navigate to the Engine Labs application in your git provider's settings.
 
 <Note>
   The user must have sufficient permissions to create webhooks on the repos you want Engine to work on.
 </Note>
-
 
 <Warning>
   It is strongly recommended that you add branch protection rules when allowing AI access to your codebase.
@@ -32,7 +31,9 @@ You can allow access to all repos or only specific repos during the auth flow. I
 
 Link Engine to Linear, Trello, Jira, or Clickup (more coming soon) in one click.
 
-The user must have permissions to create webhooks on issues boards.
+<Note>
+  The user must have permissions to create webhooks on issues boards.
+</Note>
 
 ### 4. Link a repo
 
@@ -40,7 +41,11 @@ Select a repo you want Engine to work on from the 'link repository' menu.
 
 Engine will automatically index the codebase and start running the VM set-up agent. The set-up agent identifies project dependencies and code check steps (linting, formatting, testing etc) and automatically configures Engine's cloud development VM.
 
-This can take 2-30 minutes depending on the size and complexity of your repo.
+<Info>
+  VM set-up is optional but stronly recommended\!
+</Info>
+
+This can take 2-20 minutes depending on the size and complexity of your repo.
 
 You may have to manually adjust some steps and re-run the VM test in order to complete this step. You may also have to add secrets if required for your repo.
 
