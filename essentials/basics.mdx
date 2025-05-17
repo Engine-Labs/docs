@@ -1,17 +1,17 @@
 ---
 title: "Best Practices"
-description: "Easy ways to get the most out of Eng"
+description: "Easy ways to get the most out of Engine"
 ---
 
 Engine behaves a bit like a remote software engineer. There are a few things to keep in mind as you get used to using Engine.
 
-<Icon icon="timer" /> **Engine is usually faster than doing it yourself, but not always**
+<Icon icon="washing-machine" />  **Configure Engine's Machine**
 
-The real value of Engine is not that it's faster than writing code yourself - even if it usually is - but that you can assign a task to Engine and focus on something else.
+Setting up Engine's VM is optional, but it will certainly improve results.
 
-You can also queue several tasks and review them all at once or assign tasks on the go.
+Configuring Engine's machine is a bit like onboarding a new engineer to your team. It helps Engine understand how to run and check your code.
 
-This ansynchronous workflow can help you get the most value from Engine.
+This helps Engine write code that passes any pre-commit checks and pipeline steps, and ensures Engine's code does what you expect.
 
 <Icon icon="arrow-up-big-small" /> **Start with simall tasks**
 
@@ -37,7 +37,10 @@ If a task looks like it has gone off track or code reviews aren't helping, it's 
 
 Engine's PRs are disposable (nobody spent any time on it\!) and Engine won't get offended if you decide to close a PR and move on.
 
-1. Stick to default models unless you are tinkering. Claude 3.5 and 3.7 are consistently the most reliable.
-2. Make sure you have as many set up, dependency and code check steps as possible set up in your Engine VM for each repo and that the VM test is passing. This means that it is sure to pass your checks once a merge request is made. It looks like most of your repos are set up pretty well now\!
-3. Give Engine well defined tasks you might give to a junior/mid level engineer as defined and expect a good outcome. This typically maps to the bottom 50% of issues on a typical well-managed board in terms of complexity.
-4. If a task seems to be going off script, you want to try different models/settings, or you have updated the issue it's usually best to kill the task and start again. You can do this by closing the MR, archiving the task and re-adding the label in Linear. Engine's MRs should be seen as quite disposable and a good success rate is around 70%.
+<Icon icon="timer" /> **Engine is usually faster than doing it yourself, but not always**
+
+The real value of Engine is not that it's faster than writing code yourself - even if it usually is - but that you can assign a task to Engine and focus on something else.
+
+You can also queue several tasks and review them all at once or assign tasks on the go.
+
+This ansynchronous workflow can help you get the most value from Engine.

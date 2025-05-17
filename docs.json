@@ -23,6 +23,7 @@
           {
             "group": "Essentials",
             "pages": [
+              "essentials/basics",
               "essentials/task-guidelines",
               "essentials/prompting-tips"
             ]
