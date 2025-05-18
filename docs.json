@@ -36,7 +36,9 @@
           {
             "group": "Enterprise Docs",
             "pages": [
-              "enterprise/introduction"
+              "enterprise/certification",
+              "enterprise/self-host",
+              "enterprise/support"
             ]
           }
         ]
@@ -56,17 +58,17 @@
     "global": {
       "anchors": [
         {
+          "anchor": "Home",
+          "href": "https://enginelabs.ai/",
+          "icon": "home"
+        },
+        {
           "anchor": "Documentation",
           "href": "https://mintlify.com/docs",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
+          "anchor": "FAQ",
           "href": "https://mintlify.com/blog",
           "icon": "newspaper"
         }
@@ -86,15 +88,15 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Engine",
+      "href": "https://app.enginelabs.ai"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/enginelabsai",
+      "github": "https://github.com/engine-labs",
+      "linkedin": "https://www.linkedin.com/company/enginelabs"
     }
   }
 }
