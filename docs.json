@@ -23,9 +23,25 @@
           {
             "group": "Essentials",
             "pages": [
-              "essentials/basics",
-              "essentials/task-guidelines",
-              "essentials/prompting-tips"
+              "admin/teams",
+              "admin/pricing",
+              "admin/support"
+            ]
+          },
+          {
+            "group": "Development Environment",
+            "pages": [
+              "dev-env/vm",
+              "dev-env/env-vars"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/models",
+              "configuration/prompt",
+              "configuration/git-settings",
+              "configuration/issues-tracker"
             ]
           },
           {
@@ -39,6 +55,14 @@
               "integrations/jira",
               "integrations/clickup",
               "integrations/slack"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "admin/pricing",
+              "admin/teams",
+              "admin/support"
             ]
           }
         ]

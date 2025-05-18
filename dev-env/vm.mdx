@@ -1,0 +1,57 @@
+---
+title: "Engine VM"
+description: "Engine's VM development environment"
+---
+
+Engine runs in a firecracker instance in the cloud.
+
+<Accordion title="VM base specifications" icon="notes">
+  ```
+  ## Base System
+  - **Base Image**: Ubuntu 24.04
+  - **Default User**: `engine` (UID: 1030)
+  - **Architecture**: x64
+  
+  ## Pre-installed System Packages
+  
+  ### Development Tools & Utilities
+  - Build Essential Tools (`build-essential`)
+  - Git
+  - wget, curl
+  - jq
+  - pkg-config
+  - vim
+  - strace
+  - tree
+  - tmux
+  - lsof
+  
+  ### Package Management
+  - `software-properties-common`
+  - `apt-utils`
+  - UV package manager (v0.4.25)
+  
+  ### Security & System
+  - OpenSSH Server
+  - sudo
+  - SSL development libraries (`libssl-dev`)
+  
+  ### Database
+  - PostgreSQL 16.6 & PostgreSQL contrib
+  - SQLite3 3.45.1 & SQLite3 development libraries
+  
+  ### Programming Languages & Runtimes
+  - Python 3 (with pip and venv)
+  - Node.js v20.18.3
+    - npm v11.1.0
+    - yarn v1.22.22
+  - Bun runtime v1.2.2
+  
+  ## Environment Configuration
+  - Default shell: bash
+  - PostgreSQL DATABASE_URL `postgres://postgres:postgres@localhost:5432`
+  - Bash profile `/home/engine/.bash_profile`
+  - Home directory `/home/engine`
+  - Codebase path `/home/engine/project`
+  ```
+</Accordion>
