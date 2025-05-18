@@ -23,9 +23,9 @@
           {
             "group": "Essentials",
             "pages": [
-              "admin/teams",
-              "admin/pricing",
-              "admin/support"
+              "essentials/basics",
+              "essentials/promoting-tips",
+              "essentials/task-guidelines"
             ]
           },
           {
