@@ -110,5 +110,8 @@
       "github": "https://github.com/engine-labs",
       "linkedin": "https://www.linkedin.com/company/enginelabs"
     }
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
