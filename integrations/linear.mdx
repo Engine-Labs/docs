@@ -1,5 +1,31 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Linear"
+description: "Link Engine to your Linear issues"
 ---
 
+### **Set up your Linear integration**
+
+After logging in to your account and setting up your organisation, select 'Connect tickets' from the sidebar. Then, select Linear from the pop-up modal.
+
+Follow the authorisation flow to complete the connection.
+
+### **Linking a team**
+
+Once you have linked Linear to Engine, you'll need to link a team to a repo so Engine knows where to look for tasks you assign.
+
+You can do this from the repo menu where you will see a button on the repo to link a team.
+
+### **Starting a task**
+
+There are two ways to start a task from Linear:
+
+<AccordionGroup>
+  <Accordion title="Tag Engine" icon="tag">
+    Tag Engine in an issue and Engine will automatically start work. You can find repo specific labels on the repositories page in Engine. It will typically be engine-[your_repo_name].
+
+    Engine will comment in the issue when it has finished working.
+  </Accordion>
+  <Accordion title="@engine-labs" icon="at">
+    You can tag @engine-labs in an issue and Engine will pick it up task or restart work if it's an existing task.
+  </Accordion>
+</AccordionGroup>

@@ -27,6 +27,18 @@
               "essentials/task-guidelines",
               "essentials/prompting-tips"
             ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/linear",
+              "integrations/trello",
+              "integrations/jira",
+              "integrations/clickup",
+              "integrations/github",
+              "integrations/gitlab",
+              "integrations/slack"
+            ]
           }
         ]
       },
@@ -64,12 +76,12 @@
         },
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://docs.enginelabs.ai",
           "icon": "book-open-cover"
         },
         {
           "anchor": "FAQ",
-          "href": "https://mintlify.com/blog",
+          "href": "https://www.enginelabs.ai/#faq",
           "icon": "newspaper"
         }
       ]

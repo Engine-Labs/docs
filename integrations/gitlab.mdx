@@ -1,5 +1,45 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Gitlab"
+description: "Let Engine commit directly to GitLab"
 ---
 
+Engine requires an integration to a version control provider to push commits and make PRs.
+
+<Warning>
+  We **strongly** recommend that you add branch protection rules whenever you allow AI to access to your codebase.
+</Warning>
+
+You can link Githlab easily by selecting 'connect code' from the sidebar in the Engine app and following the authentication flow.
+
+### Using Engine in Gitlab
+
+Engine can continue work on PRs it has already been assigned or start work on new PRs. There are several ways to interact with Engine from Gitlab.
+
+**Existing tasks**
+
+<AccordionGroup>
+  <Accordion title="Code review" icon="magnifying-glass">
+    Review an Engine PR to have Engine pick it back up and make changes.
+
+    You can make line-by-line comments or just leave a high level review. It's best to 'request changes' to make it clear you need Engine to re-start work.
+  </Accordion>
+  <Accordion title="@engine-labs" icon="at">
+    Tag @engine-labs anywhere in the PR to get engine to restart work on a task.
+  </Accordion>
+</AccordionGroup>
+
+**New PRs**
+
+<Accordion title="@engine-labs" icon="at">
+  Tag @engine-labs anywhere in the PR to get engine to restart work on a task.
+</Accordion>
+
+Closing a PR in Gitlab will update its status in Engine.
+
+### **Permissions**
+
+You can restrict Engine's access to particular repos if you like. You can update this later in your Github application settings.
+
+<Note>
+  The user linking Engine to Github must have sufficient permissions to create webhooks on all the repos you want Enigine to work on.
+</Note>
