@@ -31,12 +31,12 @@
           {
             "group": "Integrations",
             "pages": [
+              "integrations/github",
+              "integrations/gitlab",
               "integrations/linear",
               "integrations/trello",
               "integrations/jira",
               "integrations/clickup",
-              "integrations/github",
-              "integrations/gitlab",
               "integrations/slack"
             ]
           }
