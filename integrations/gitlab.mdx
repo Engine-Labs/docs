@@ -22,7 +22,7 @@ Engine can continue work on PRs it has already been assigned or start work on ne
   <Accordion title="Code review" icon="magnifying-glass">
     Review an Engine PR to have Engine pick it back up and make changes.
 
-    You can make line-by-line comments or just leave a high level review. It's best to 'request changes' to make it clear you need Engine to re-start work.
+    You can make line-by-line comments or just leave a high level review. If working line-by-line, add a summary comment when you are done. Top level MR comments will also be picked up.
   </Accordion>
   <Accordion title="@engine-labs" icon="at">
     Tag @engine-labs anywhere in the PR to get engine to restart work on a task.
@@ -39,8 +39,8 @@ Closing or merging a PR in Gitlab will update its status in Engine.
 
 ### **Permissions**
 
-You can restrict Engine's access to particular repos if you like. You can update this later in your Github application settings.
+You can restrict Engine's access to particular repos if you like. You can update this later in your Gitlab application settings.
 
 <Note>
-  The user linking Engine to Github must have sufficient permissions to create webhooks on all the repos you want Enigine to work on.
+  The user linking Engine to Gitlab must have sufficient permissions to create webhooks on all the repos you want Enigine to work on.
 </Note>
