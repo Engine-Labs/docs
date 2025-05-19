@@ -4,7 +4,34 @@ description: "Engine's VM development environment"
 icon: "computer-classic"
 ---
 
-Engine runs in a firecracker instance in the cloud.
+Engine works in a firecracker instance in the cloud.
+
+Properly configuring Engine's VM with system setup, project dependencies, and code checks will significantly improve Engine's work.
+
+A passing VM setup with also allow Engine to be more autonomous in response to failing pipelines and other external triggers.
+
+<Note>
+  A passing VM setup lets Engine write better code and be more proactive in your workflows
+</Note>
+
+### System Setup
+
+Install and configure software, tools, and  packages required at the system level.
+
+For example, this system setup configration installs Node 18 and configures a database to run tests:
+
+```[expandable]
+# Downgrade to Node v18
+sudo apt-get remove -y nodejs && curl -fsSL https://deb.nodesource.com/setup_18.x | sudo bash - && sudo apt-get install -y nodejs
+
+# Create test database
+export PGPASSWORD=postgres && psql -U postgres -c "CREATE DATABASE test_db;"
+
+# Run database migrations
+npm run migrate
+```
+
+Every Engine VM has the following base system specification by deault.
 
 <Accordion title="VM base specifications" icon="notes">
   ```
@@ -56,3 +83,31 @@ Engine runs in a firecracker instance in the cloud.
   - Codebase path `/home/engine/project`
   ```
 </Accordion>
+
+### Project Dependencies
+
+Install repo specific dependencies like libraries, frameworks and packages.
+
+For example, use npm to install project dependencies:
+
+```[expandable]
+# Install deps
+npm install
+```
+
+### Code Checks
+
+Code checks are commands Engine runs before committing your code, to ensure it passes and pre commit or pipeline steps.
+
+Use code checks to lint, test and build your code, for example:
+
+```[expandable]
+# Run lint
+npm run lint
+
+# Run build
+npm run build
+
+# Run tests
+npm run test
+```

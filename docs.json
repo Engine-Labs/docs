@@ -32,7 +32,8 @@
             "group": "Development Environment",
             "pages": [
               "dev-env/vm",
-              "dev-env/env-vars"
+              "dev-env/env-vars",
+              "dev-env/vm-test"
             ]
           },
           {
