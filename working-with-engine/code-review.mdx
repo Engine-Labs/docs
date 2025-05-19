@@ -1,5 +1,42 @@
 ---
 title: "Pull Requests"
-description: "Description of your new file."
 icon: "code-branch"
+description: "Triggering engine from a PR"
 ---
+
+Engine can re-start work on its own PRs or help out on PRs from other users.
+
+There are a number of ways to work with Engine from PRs in your git providers application. Some interactions depend on whether you are using [Github](/integrations/github) or [Gitlab](/integrations/gitlab) but the principles remain the same.
+
+### Automatic Triggers
+
+<Note>
+  Automatic triggers will only work if your repo has a passing [VM setup](/dev-env/vm)
+</Note>
+
+If Engine is properly setup for your repo, it will automatically respond to a failing pipeline or automatic reviews and attempt to work on your PR until is in a passing state. Typically, Engine will try to do this three times.
+
+You can ignore git users (such as bots) from the git menu in the Engine app.
+
+### **Existing Tasks**
+
+<AccordionGroup>
+  <Accordion title="Code review" icon="magnifying-glass">
+    Review an Engine PR to have Engine pick it back up and make changes.
+
+    You can make line-by-line comments or just leave a high level review. It's best to 'request changes' to make it clear you need Engine to re-start work.
+  </Accordion>
+  <Accordion title="@engine-labs" icon="at">
+    Tag @engine-labs anywhere in the PR to get engine to restart work on a task.
+  </Accordion>
+</AccordionGroup>
+
+### **New PRs**
+
+<Accordion title="@engine-labs" icon="at">
+  Tag @engine-labs anywhere in the PR to get engine to restart work on a task.
+</Accordion>
+
+### Closing a Pull Request
+
+Closing a PR in Github will update its status in Engine.
