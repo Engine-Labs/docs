@@ -3,3 +3,17 @@ title: "Task Status"
 description: "Description of your new file."
 icon: "flag-pennant"
 ---
+
+Engine tasks can result in a number of outcomes:
+
+- QUEUED - The task has been recieved by Engine and is waiting to be executed. Paid tiers have different allowances for concurrently running tasks
+- RUNNING - Engine is currently working on your task
+- READY - Engine has made a PR that is ready for review
+- NEEDS INFO - Engine needs your input on an issue from your workflow tool
+- PLAN READY - Engine has made a plan which is ready for your review in you workflow tool
+- SUCCEEDED - A PR has successfully been merged
+- STOPPED - The task has been stopped or cancelled
+- MISSING SETUP - Engine cannot automatically continue work on a task because the repo is missing a passing VM setup
+- CLOSED - A PR has been closed
+- FAILED - Engine failed to make a pull request for your task
+- LIMIT REACHED - Engine has reached the limit for automatic task retries or the task limit on your account
