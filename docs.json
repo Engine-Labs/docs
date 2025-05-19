@@ -31,9 +31,11 @@
           {
             "group": "Development Environment",
             "pages": [
+              "dev-env/setup-agent",
               "dev-env/vm",
-              "dev-env/env-vars",
-              "dev-env/vm-test"
+              "dev-env/vm-test",
+              "dev-env/env-vars"
+
             ]
           },
           {

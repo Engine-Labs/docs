@@ -8,6 +8,10 @@ Engine works in a firecracker instance in the cloud.
 
 Properly configuring Engine's VM with system setup, project dependencies, and code checks will significantly improve Engine's work.
 
+<Check>
+  Engine can attempt to configure itself using the [setup agent](/dev-env/setup-agent)
+</Check>
+
 A passing VM setup with also allow Engine to be more autonomous in response to failing pipelines and other external triggers.
 
 <Note>
@@ -113,3 +117,9 @@ npm run build
 # Run tests
 npm run test
 ```
+
+### Git Actions Workflow (beta)
+
+If you have any actions workflows in your git provider you can select them from the dropdown menu to be included in Engine's code checks.
+
+Any selected actions will appear as an additional step in the code checks section.
