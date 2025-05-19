@@ -3,3 +3,23 @@ title: "Test your VM Setup"
 description: "Ensure your VM is configured properly"
 icon: "alien-8bit"
 ---
+
+Run a VM setup test to verify your VM is confured properly and Engine can successfuly make commits.
+
+Running a test can take several minutes but can be manually stopped.
+
+If your pipeline changes or you make any changes to Engine's VM you must re-run the tests to ensure Engine can work effectively.
+
+### VM Terminal
+
+You can open a terminal on an instance of Engine's VM to test any command or series of commands.
+
+This can be helpful in debugging Engine's VM configuration.
+
+You can access the terminal from the VM setup page for a given repo.
+
+<Warning>
+  Any commands entered in the terminal will not persist to any other instances of Engine's VM.
+
+  The system available in the terminal will always start with the default VM specification.
+</Warning>
