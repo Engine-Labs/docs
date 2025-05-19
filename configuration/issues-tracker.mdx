@@ -1,7 +1,28 @@
 ---
 title: "Workflow Settings"
-description: "Description of your new file."
+description: "Configure how Engine works with your workflow tool"
 icon: "chart-network"
 ---
 
-autopilot etc
+### **Autopilot**
+
+Autopilot enables Engine to automatically pick up and attempt tickets and issues from your workflow tool once a day.
+
+<Info>
+  Autopilot is only available on select Engine plans.
+</Info>
+
+You can enable autopilot from the workflow integration page in the Engine app.
+
+Autopilot can be set to plan mode or task mode:
+
+- **Plan mode** - Engine will automatically create a plan inside the ticket for your approval. Relabel the ticket with the Engine tag to get Engine to start writing code.
+- **Task mode** - Engine will automatically start work in a new branch on your repo. React to Engine's comment with a emoji and Engine will open a PR.
+
+### **Plan mode**
+
+Individual repos can be set to plan mode.
+
+Plan mode adds a comment to the issue describing Engine's planned implementation and any clarifying questions.
+
+To get Engine to start on implementation, relabel the issue with the Engine tag.

@@ -1,9 +1,31 @@
 ---
 title: "Git Settings"
-description: "Description of your new file."
+description: "Configure how Engine works with your git provider"
 icon: "code"
 ---
 
-git settings ignore etc
+### Branch naming
 
-branch names etc
+You can configure Engine's branch naming conventions from the git provider settings menu.
+
+Engine provides several common variables you can include using handlebars
+
+### Changing Git Committer
+
+By default, Engine will commit as `engine-labs-app[bot]` but you can change this from the git provider settings menu.
+
+### Setting the Base Branch
+
+You can set the base branch for Engine to work off for each repository in the repository settings page.
+
+### Ignoring git users
+
+You can ignore git users (such as bots) from the git menu in the Engine app. This will exclude  events from these user triggering automatic triggers.
+
+### Automatic Triggers
+
+<Note>
+  Automatic triggers will only work if your repo has a passing [VM setup](/dev-env/vm)
+</Note>
+
+If Engine is properly setup for your repo, it will automatically respond to a failing pipeline or automatic reviews and attempt to work on your PR until is in a passing state. Typically, Engine will try to do this three times.
