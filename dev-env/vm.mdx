@@ -42,6 +42,9 @@ npm run migrate
 Every Engine VM has the following base system specification by deault.
 
 <Accordion title="VM base specifications" icon="notes">
+  - CPU: 2vCPU
+  - Memory: 4Gb autoscaling up to 16Gb
+
   ```
   ## Base System
   - **Base Image**: Ubuntu 24.04
@@ -65,7 +68,7 @@ Every Engine VM has the following base system specification by deault.
   ### Package Management
   - `software-properties-common`
   - `apt-utils`
-  - UV package manager (v0.4.25)
+  - UV package manager (v0.7.6)
   
   ### Security & System
   - OpenSSH Server
@@ -73,7 +76,6 @@ Every Engine VM has the following base system specification by deault.
   - SSL development libraries (`libssl-dev`)
   
   ### Database
-  - PostgreSQL 16.6 & PostgreSQL contrib
   - SQLite3 3.45.1 & SQLite3 development libraries
   
   ### Programming Languages & Runtimes
