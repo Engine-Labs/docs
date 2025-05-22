@@ -1,6 +1,6 @@
 ---
 title: "Quickstart"
-description: "Steps to get your first Engine PR"
+description: "A few steps to get your first Engine PR"
 icon: "forward-fast"
 sidebarTitle: "Quickstart"
 ---
@@ -17,6 +17,8 @@ Give your team a name.
 
 Engine works with GitHub and GitLab. You can only link one git provider at a time.
 
+If you signed in with Github or Gitlab you've already completed this step\!
+
 You can allow access to all repos or only specific repos during the auth flow. If you want to update these permissions later, navigate to the Engine Labs application in your git provider's settings.
 
 <Note>
@@ -27,15 +29,7 @@ You can allow access to all repos or only specific repos during the auth flow. I
   It is strongly recommended that you add branch protection rules when allowing AI access to your codebase.
 </Warning>
 
-### 3. Link your issues board
-
-Link Engine to Linear, Trello, Jira, or Clickup (more coming soon) in one click.
-
-<Note>
-  The user must have permissions to create webhooks on issues boards.
-</Note>
-
-### 4. Link a repo
+### 3. Add a repo
 
 Select a repo you want Engine to work on from the 'link repository' menu.
 
@@ -53,18 +47,32 @@ You may have to manually adjust some steps and re-run the VM test in order to co
   You will only see repos that you have sufficient access for in the repo linking menu.
 </Note>
 
-### 5. Connect board to repo
+### 4. Run your first task
 
-Connect a team or board to a repo.
+![Screenshot2025 05 22at09 21 59 Pn](/images/Screenshot2025-05-22at09.21.59.png)
 
-This tells Engine what to monitor for assigned issues. You can assign multiple repos to the same board or team.
+You can assign your first task directly from the Engne app. 
 
-### 6. Run your first task
-
-Assign a task to Engine by adding Engine's label to an issue.
-
-You can find this label in the blue pill on the relevant repo on the 'repositories' page. Click on the label to copy it and add it to the issue you would like Engine to start work on.
+Just tell Engine what you want it work on, make sure the right repo is selected, choose your LLM, and hit start\!
 
 <Card title="Engine Best Practices" icon="angles-up" href="https://docs.enginelabs.ai/essentials/basics">
   Check out our prompting guidelines and best practices to get the most out of Engine.
 </Card>
+
+### 3. Link your issues board
+
+Link Engine to Linear, Trello, Jira, or Clickup (more coming soon) in one click.
+
+<Note>
+  The user must have permissions to create webhooks on issues boards.
+</Note>
+
+Then, Connect a team or board to a repo. You can do this from the repositories page in the Engine app.
+
+This tells Engine what to monitor for assigned issues. You can assign multiple repos to the same board or team.
+
+### 6. Run a task directly from an issue
+
+Assign a task to Engine by adding Engine's label to an issue.
+
+You can find this label in the blue pill on the relevant repo on the 'repositories' page. Click on the label to copy it and add it to the issue you would like Engine to start work on.
