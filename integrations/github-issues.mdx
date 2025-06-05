@@ -1,0 +1,30 @@
+---
+title: "Github Issues"
+description: "Assign Github issues to Engine"
+icon: "note"
+---
+
+Engine can serve as an AI software engineering agent for your Github issues.
+
+Engine receives all context from a Github issue, including images.
+
+### **Set up your Github Issues integration**
+
+The Github issues integration is available for users who have already connected Engine with Github.
+
+Select Github issues on the integrations page after you have linked your Github account.
+
+### **Starting a task**
+
+There are a couple of ways to start a task from your Github issues:
+
+<AccordionGroup>
+  <Accordion title="Label Engine" icon="tag">
+    Add the Engine repo-specific label to an issue and Engine will automatically start work. You can find labels for each repo on the repositories page in Engine. It will typically be engine-[your_repo_name].
+
+    Engine will comment in the issue when it has finished working.
+  </Accordion>
+  <Accordion title="@engine-labs" icon="at">
+    You can tag @engine-labs in a comment and Engine will pick it up or restart work if it's an existing task. If its a new task, Engine will figure out which repo to work on and get started.
+  </Accordion>
+</AccordionGroup>

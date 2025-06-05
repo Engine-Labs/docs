@@ -64,6 +64,7 @@
               "integrations/github",
               "integrations/gitlab",
               "integrations/linear",
+              "integrations/github-issues",
               "integrations/trello",
               "integrations/jira",
               "integrations/clickup",
