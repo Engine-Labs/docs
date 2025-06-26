@@ -1,30 +1,30 @@
 ---
-title: "Engine VM"
-description: "Engine's VM development environment"
+title: "Task Runner (VM)"
+description: "Engine's development environment"
 icon: "computer-classic"
 ---
 
-Engine works in a firecracker instance in the cloud.
+Engine works in a firecracker instance in the cloud. It is a virtual machine that we call a **'task runner'**.
 
-Properly configuring Engine's VM with system setup, project dependencies, and code checks will significantly improve Engine's work.
+Properly configuring Engine's task runner with system setup, project dependencies, and code checks will significantly improve Engine's work.
 
 <Check>
   Engine can attempt to configure itself using the [setup agent](/dev-env/setup-agent)
 </Check>
 
-A passing VM setup with also allow Engine to be more autonomous in response to failing pipelines and other external triggers.
+A passing task runner setup with also allow Engine to be more autonomous in response to failing pipelines and other external triggers.
 
 <Note>
-  A passing VM setup lets Engine write better code and be more proactive in your workflows
+  A passing task runner setup lets Engine write better code and be more proactive in your workflows
 
-  Learn more about [VM Tests](/dev-env/vm-test)
+  Learn more about [task runner tests](/dev-env/vm-test)
 </Note>
 
-Engine will automatically resize your virtual machine's memory to meet the needs of your project in increments of 2Gb from 4Gb to a maximum of 16Gb. Users that require more than 16Gb of memory should [contact us](/admin/support).
+Engine will automatically resize your VM's memory to meet the needs of your project in increments of 2Gb from 4Gb to a maximum of 16Gb. Users that require more than 16Gb of memory should [contact us](/admin/support).
 
 ### System Setup
 
-Install and configure software, tools, and  packages required at the system level.
+Install and configure software, tools, and packages required at the system level.
 
 For example, this system setup configration installs Node 18 and configures a database to run tests:
 
@@ -68,7 +68,6 @@ Every Engine VM has the following base system specification by deault.
   ### Package Management
   - `software-properties-common`
   - `apt-utils`
-  - UV package manager (v0.7.6)
   
   ### Security & System
   - OpenSSH Server
@@ -79,15 +78,14 @@ Every Engine VM has the following base system specification by deault.
   - SQLite3 3.45.1 & SQLite3 development libraries
   
   ### Programming Languages & Runtimes
-  - Python 3 (with pip and venv)
+  - Python 3 (with pip, venv, and UV v0.7.6)
   - Node.js v20.18.3
     - npm v11.1.0
     - yarn v1.22.22
-  - Bun runtime v1.2.2
+  - Bun runtime v1.2.17
   
   ## Environment Configuration
   - Default shell: bash
-  - PostgreSQL DATABASE_URL `postgres://postgres:postgres@localhost:5432`
   - Bash profile `/home/engine/.bash_profile`
   - Home directory `/home/engine`
   - Codebase path `/home/engine/project`
