@@ -12,13 +12,10 @@
     "tabs": [
       {
         "tab": "Documentation",
+        "pages": [
+          "introduction"
+        ],
         "groups": [
-          {
-            "group": "Introduction",
-            "pages": [
-              "introduction"
-            ]
-          },
           {
             "group": "Essentials",
             "pages": [
