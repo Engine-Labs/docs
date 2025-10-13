@@ -29,7 +29,6 @@
             "pages": [
               "dev-env/setup-agent",
               "dev-env/vm",
-              "dev-env/vm-test",
               "dev-env/env-vars"
             ]
           },
