@@ -31,7 +31,6 @@
               "dev-env/vm",
               "dev-env/vm-test",
               "dev-env/env-vars"
-
             ]
           },
           {
@@ -51,20 +50,6 @@
               "configuration/memory",
               "configuration/git-settings",
               "configuration/issues-tracker"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "integrations/mcp",
-              "integrations/github",
-              "integrations/gitlab",
-              "integrations/linear",
-              "integrations/github-issues",
-              "integrations/trello",
-              "integrations/jira",
-              "integrations/clickup",
-              "integrations/slack"
             ]
           },
           {
