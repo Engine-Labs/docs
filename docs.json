@@ -9,61 +9,56 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Documentation",
-        "pages": [
-          "introduction"
-        ],
-        "groups": [
-          {
-            "group": "Essentials",
-            "pages": [
-              "chats",
-              "tasks",
-              "repos"
-            ]
-          },
-          {
-            "group": "Development Environment",
-            "pages": [
-              "dev-env/setup-agent",
-              "dev-env/vm",
-              "dev-env/vm-test",
-              "dev-env/env-vars"
-            ]
-          },
-          {
-            "group": "Working with Engine",
-            "pages": [
-              "working-with-engine/triggering-tasks",
-              "working-with-engine/issues",
-              "working-with-engine/code-review",
-              "working-with-engine/task-statuses"
-            ]
-          },
-          {
-            "group": "Configuration",
-            "pages": [
-              "configuration/models",
-              "configuration/prompt",
-              "configuration/memory",
-              "configuration/git-settings",
-              "configuration/issues-tracker"
-            ]
-          },
-          {
-            "group": "Admin",
-            "pages": [
-              "admin/pricing",
-              "admin/teams",
-              "admin/troubleshooting",
-              "admin/support"
-            ]
-          }
-        ]
-      }
-    ],
+      "pages": [
+        "introduction"
+      ],
+      "groups": [
+        {
+          "group": "Essentials",
+          "pages": [
+            "chats",
+            "tasks",
+            "repos"
+          ]
+        },
+        {
+          "group": "Development Environment",
+          "pages": [
+            "dev-env/setup-agent",
+            "dev-env/vm",
+            "dev-env/vm-test",
+            "dev-env/env-vars"
+          ]
+        },
+        {
+          "group": "Working with Engine",
+          "pages": [
+            "working-with-engine/triggering-tasks",
+            "working-with-engine/issues",
+            "working-with-engine/code-review",
+            "working-with-engine/task-statuses"
+          ]
+        },
+        {
+          "group": "Configuration",
+          "pages": [
+            "configuration/models",
+            "configuration/prompt",
+            "configuration/memory",
+            "configuration/git-settings",
+            "configuration/issues-tracker"
+          ]
+        },
+        {
+          "group": "Admin",
+          "pages": [
+            "admin/pricing",
+            "admin/teams",
+            "admin/troubleshooting",
+            "admin/support"
+          ]
+        }
+      ],
     "global": {
       "anchors": [
         {
