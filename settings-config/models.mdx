@@ -1,32 +1,30 @@
 ---
 title: "LLM Models"
-description: "Use Engine with most frontier LLMs"
 icon: "robot"
 ---
 
-Engine works with all of the best frontier LLMs for code and we add new models all the time.
+Engine works with the best frontier LLMs for chat and code generation.
+
+Chat supports:
+
+- Anthropic Sonnet 4.5
+- OpenAI GPT-5
+
+Planning and coding agents support:
+
+- GPT-5
+- GPT-5 Codex
+- Anthropic Claude 4.5 Sonnet
+- Google Gemini 2.5 Pro
+- Gemini 2.5 Flash (+ thinking)
+- Sonnet 4.5 - GPT-5 Alloy
 
 <Note>
-  Access to some models requires a paid subscription.
+  Model alloys combine two alloys in the same agent thread. Our research shows it improves performance by several percentage points.
 </Note>
 
-You can set the model on a per repo basis from the repository settings menu.
-
-Supported models:
-
-- Anthropic Claude 4 Sonnet
-- Anthropic Claude 4 Opus
-- Anthropic Claude 3.7 Sonnet
-- Anthropic Claude 3.5 Sonnet
-- Google Gemini 2.5 Pro Preview (beta)
-- OpenAI GPT 4.1
-- OpenAI o3 (3x usage costs)
-- Open AI o4 Mini
+You can set the model for planning and coding on a per repo basis from the repository settings menu.
 
 <Warning>
-  Performance may vary on some models. Be prepared to experiment when changing Engine's model
+  Performance may vary. Be prepared to experiment when changing model
 </Warning>
-
-<Check>
-  LLM models are **never** trained or fine-tuned on any of your code or Engine usage.
-</Check>
