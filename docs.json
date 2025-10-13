@@ -33,15 +33,6 @@
             ]
           },
           {
-            "group": "Working with Engine",
-            "pages": [
-              "working-with-engine/triggering-tasks",
-              "working-with-engine/issues",
-              "working-with-engine/code-review",
-              "working-with-engine/task-statuses"
-            ]
-          },
-          {
             "group": "Configuration",
             "pages": [
               "configuration/models",
