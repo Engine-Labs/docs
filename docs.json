@@ -67,18 +67,13 @@
       "anchors": [
         {
           "anchor": "Home",
-          "href": "https://enginelabs.ai/",
+          "href": "https://cto.new/",
           "icon": "house"
         },
         {
           "anchor": "Documentation",
-          "href": "https://docs.enginelabs.ai",
+          "href": "https://docs.cto.new",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "FAQ",
-          "href": "https://www.enginelabs.ai/#faq",
-          "icon": "newspaper"
         }
       ]
     }
