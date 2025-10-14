@@ -87,13 +87,13 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Open Engine",
-      "href": "https://app.enginelabs.ai"
+      "label": "Open cto.new",
+      "href": "https://cto.new"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/enginelabsai",
+      "x": "https://x.com/ctodotnew",
       "github": "https://github.com/engine-labs",
       "linkedin": "https://www.linkedin.com/company/enginelabs"
     }
