@@ -51,6 +51,11 @@
               "help/support"
             ]
           }
+        ],
+        "pages": [
+          "pricing",
+          "privacy",
+          "soc2"
         ]
       },
       {
