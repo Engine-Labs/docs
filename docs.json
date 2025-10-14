@@ -25,8 +25,8 @@
           {
             "group": "Integrations",
             "pages": [
-              "integrations/api",
-              "integrations/mcp"
+              "integrations/API",
+              "integrations/MCP"
             ]
           },
           {
@@ -45,7 +45,7 @@
           {
             "group": "Help",
             "pages": [
-              "help/best-practices",
+              "help/best-practice",
               "help/support"
             ]
           },
