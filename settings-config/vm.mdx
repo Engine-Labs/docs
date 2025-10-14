@@ -1,26 +1,18 @@
 ---
 title: "Task Runner (VM)"
-description: "Engine's development environment"
+description: "cto.new's development environment"
 icon: "computer-classic"
 ---
 
-Engine works in a firecracker instance in the cloud. It is a virtual machine that we call a **'task runner'**.
+cto.new works in a firecracker instance in the cloud. It is a virtual machine that we call a **'task runner'**.
 
-Properly configuring Engine's task runner with system setup, project dependencies, and code checks will significantly improve Engine's work.
+Properly configuring the task runner with system setup, project dependencies, and code checks will significantly improve the agent's work.
 
 <Check>
-  Engine can attempt to configure itself using the [setup agent](/dev-env/setup-agent)
+  cto.new can attempt to configure its own task runner using the setup agent
 </Check>
 
-A passing task runner setup with also allow Engine to be more autonomous in response to failing pipelines and other external triggers.
-
-<Note>
-  A passing task runner setup lets Engine write better code and be more proactive in your workflows
-
-  Learn more about [task runner tests](/dev-env/vm-test)
-</Note>
-
-Engine will automatically resize your VM's memory to meet the needs of your project in increments of 2Gb from 4Gb to a maximum of 16Gb. Users that require more than 16Gb of memory should [contact us](/admin/support).
+cto.new will automatically resize your VM's memory to meet the needs of your project in increments of 2Gb from 4Gb to a maximum of 16Gb. Users that require more than 16Gb of memory should [contact us](/admin/support).
 
 ### System Setup
 
@@ -128,7 +120,7 @@ Any selected actions will appear as an additional step in the code checks sectio
 
 ---
 
--
+- 
 
 Run a test to verify your task runner is confured properly and Engine can successfuly make commits.
 
