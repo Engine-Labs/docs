@@ -1,0 +1,141 @@
+---
+title: "Task Runner (VM)"
+description: "cto.new's development environment"
+icon: "computer-classic"
+---
+
+cto.new works in a firecracker instance in the cloud. It is a virtual machine that we call a **'task runner'**.
+
+Properly configuring the task runner with system setup, project dependencies, and code checks will significantly improve the agent's work.
+
+<Check>
+  cto.new can attempt to configure its own task runner using the setup agent
+</Check>
+
+cto.new will automatically resize your VM's memory to meet the needs of your project in increments of 2Gb from 4Gb to a maximum of 16Gb. Users that require more than 16Gb of memory should [contact us](/admin/support).
+
+### System Setup
+
+Install and configure software, tools, and packages required at the system level.
+
+For example, this system setup configration installs Node 18 and configures a database to run tests:
+
+```[expandable]
+# Downgrade to Node v18
+sudo apt-get remove -y nodejs && curl -fsSL https://deb.nodesource.com/setup_18.x | sudo bash - && sudo apt-get install -y nodejs
+
+# Create test database
+export PGPASSWORD=postgres && psql -U postgres -c "CREATE DATABASE test_db;"
+
+# Run database migrations
+npm run migrate
+```
+
+Every VM has the following base system specification by deault.
+
+<Accordion title="VM base specifications" icon="notes">
+  - CPU: 2vCPU
+  - Memory: 4Gb autoscaling up to 16Gb
+
+  ```
+  ## Base System
+  - **Base Image**: Ubuntu 24.04
+  - **Default User**: `engine` (UID: 1030)
+  - **Architecture**: x64
+  
+  ## Pre-installed System Packages
+  
+  ### Development Tools & Utilities
+  - Build Essential Tools (`build-essential`)
+  - Git
+  - wget, curl
+  - jq
+  - pkg-config
+  - vim
+  - strace
+  - tree
+  - tmux
+  - lsof
+  
+  ### Package Management
+  - `software-properties-common`
+  - `apt-utils`
+  
+  ### Security & System
+  - OpenSSH Server
+  - sudo
+  - SSL development libraries (`libssl-dev`)
+  
+  ### Database
+  - SQLite3 3.45.1 & SQLite3 development libraries
+  
+  ### Programming Languages & Runtimes
+  - Python 3 (with pip, venv, and UV v0.7.6)
+  - Node.js v20.18.3
+    - npm v11.1.0
+    - yarn v1.22.22
+  - Bun runtime v1.2.17
+  
+  ## Environment Configuration
+  - Default shell: bash
+  - Bash profile `/home/engine/.bash_profile`
+  - Home directory `/home/engine`
+  - Codebase path `/home/engine/project`
+  ```
+</Accordion>
+
+### Project Dependencies
+
+Install repo specific dependencies like libraries, frameworks and packages.
+
+For example, use npm to install project dependencies:
+
+```[expandable]
+# Install deps
+npm install
+```
+
+### Code Checks
+
+Code checks are commands cto.new runs before committing your code, to ensure it passes and pre commit or pipeline steps.
+
+Use code checks to lint, test and build your code, for example:
+
+```[expandable]
+# Run lint
+npm run lint
+
+# Run build
+npm run build
+
+# Run tests
+npm run test
+```
+
+### Task Runner Test
+
+Run a test to verify your task runner is confured properly and cto.new can successfuly make commits.
+
+Running a test can take several minutes but can be manually stopped.
+
+If your pipeline changes or you make any changes to cto.new's VM you should re-run the tests to ensure cto.new can work effectively.
+
+### Task Runner Terminal
+
+You can open a terminal on an instance of cto.new's task runner to test any command or series of commands.
+
+This can be helpful in debugging cto.new's VM configuration.
+
+You can access the terminal from the VM setup page for a given repo.
+
+<Warning>
+  Any commands entered in the terminal will not persist to any other instances of cto.new's VM.
+
+  The system available in the terminal will always start with the default VM specification.
+</Warning>
+
+### Git Actions Workflow (beta)
+
+If you have any actions workflows in your git provider you can select them from the dropdown menu to be included in cto.new's code checks.
+
+Any selected actions will appear as an additional step in the code checks section.

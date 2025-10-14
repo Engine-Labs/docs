@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Engine Labs Docs",
+  "theme": "willow",
+  "name": "cto.new Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -12,88 +12,55 @@
     "tabs": [
       {
         "tab": "Documentation",
+        "pages": [
+          "introduction"
+        ],
         "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart"
-            ]
-          },
           {
             "group": "Essentials",
             "pages": [
-              "essentials/basics",
-              "essentials/prompting-tips",
-              "essentials/task-guidelines"
-            ]
-          },
-          {
-            "group": "Development Environment",
-            "pages": [
-              "dev-env/setup-agent",
-              "dev-env/vm",
-              "dev-env/vm-test",
-              "dev-env/env-vars"
-
-            ]
-          },
-          {
-            "group": "Working with Engine",
-            "pages": [
-              "working-with-engine/triggering-tasks",
-              "working-with-engine/issues",
-              "working-with-engine/code-review",
-              "working-with-engine/task-statuses"
-            ]
-          },
-          {
-            "group": "Configuration",
-            "pages": [
-              "configuration/models",
-              "configuration/prompt",
-              "configuration/memory",
-              "configuration/git-settings",
-              "configuration/issues-tracker"
+              "essentials/chats",
+              "essentials/tasks",
+              "essentials/repos"
             ]
           },
           {
             "group": "Integrations",
             "pages": [
-              "integrations/mcp",
-              "integrations/github",
-              "integrations/gitlab",
-              "integrations/linear",
-              "integrations/github-issues",
-              "integrations/trello",
-              "integrations/jira",
-              "integrations/clickup",
-              "integrations/slack"
+              "integrations/API",
+              "integrations/MCP"
             ]
           },
           {
-            "group": "Admin",
+            "group": "Settings & Config",
             "pages": [
-              "admin/pricing",
-              "admin/teams",
-              "admin/troubleshooting",
-              "admin/support"
+              "settings-config/models",
+              "settings-config/workspace-settings",
+              "settings-config/repo-setings",
+              "settings-config/vm",
+              "settings-config/setup-agent",
+              "settings-config/env-vats",
+              "settings-config/prompt-memory", 
+              "settings-config/teams"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/best-practice",
+              "help/support"
             ]
           }
+        ],
+        "pages": [
+          "pricing",
+          "privacy",
+          "soc2"
         ]
       },
       {
-        "tab": "Enterprise",
-        "groups": [
-          {
-            "group": "Enterprise Docs",
-            "pages": [
-              "enterprise/certification",
-              "enterprise/self-host",
-              "enterprise/support"
-            ]
-          }
-        ]
+        "tab": "Changelog",
+        "pages": "changelog/changelog"
       }
     ],
     "global": {
