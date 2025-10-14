@@ -119,23 +119,3 @@ Run a test to verify your task runner is confured properly and cto.new can succe
 Running a test can take several minutes but can be manually stopped.
 
 If your pipeline changes or you make any changes to cto.new's VM you should re-run the tests to ensure cto.new can work effectively.
-
-### Task Runner Terminal
-
-You can open a terminal on an instance of cto.new's task runner to test any command or series of commands.
-
-This can be helpful in debugging cto.new's VM configuration.
-
-You can access the terminal from the VM setup page for a given repo.
-
-<Warning>
-  Any commands entered in the terminal will not persist to any other instances of cto.new's VM.
-
-  The system available in the terminal will always start with the default VM specification.
-</Warning>
-
-### Git Actions Workflow (beta)
-
-If you have any actions workflows in your git provider you can select them from the dropdown menu to be included in cto.new's code checks.
-
-Any selected actions will appear as an additional step in the code checks section.
