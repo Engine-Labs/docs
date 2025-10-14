@@ -31,7 +31,7 @@ export PGPASSWORD=postgres && psql -U postgres -c "CREATE DATABASE test_db;"
 npm run migrate
 ```
 
-Every Engine VM has the following base system specification by deault.
+Every VM has the following base system specification by deault.
 
 <Accordion title="VM base specifications" icon="notes">
   - CPU: 2vCPU
@@ -97,7 +97,7 @@ npm install
 
 ### Code Checks
 
-Code checks are commands Engine runs before committing your code, to ensure it passes and pre commit or pipeline steps.
+Code checks are commands cto.new runs before committing your code, to ensure it passes and pre commit or pipeline steps.
 
 Use code checks to lint, test and build your code, for example:
 
@@ -112,21 +112,9 @@ npm run build
 npm run test
 ```
 
-### Git Actions Workflow (beta)
-
-If you have any actions workflows in your git provider you can select them from the dropdown menu to be included in Engine's code checks.
-
-Any selected actions will appear as an additional step in the code checks section.
-
----
-
-- 
+### Task Runner Test
 
 Run a test to verify your task runner is confured properly and Engine can successfuly make commits.
-
-<Note>
-  You task runner setup won't be used by Engine unless it has been tested successfully
-</Note>
 
 Running a test can take several minutes but can be manually stopped.
 
@@ -145,3 +133,9 @@ You can access the terminal from the VM setup page for a given repo.
 
   The system available in the terminal will always start with the default VM specification.
 </Warning>
+
+### Git Actions Workflow (beta)
+
+If you have any actions workflows in your git provider you can select them from the dropdown menu to be included in cto.new's code checks.
+
+Any selected actions will appear as an additional step in the code checks section.
