@@ -19,9 +19,16 @@
           {
             "group": "Essentials",
             "pages": [
-              "chats",
-              "tasks",
-              "repos"
+              "essentials/chats",
+              "essentials/tasks",
+              "essentials/repos"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/API",
+              "integrations/MCP"
             ]
           },
           {
@@ -32,27 +39,16 @@
               "settings-config/repo-setings",
               "settings-config/vm",
               "settings-config/setup-agent",
-              "settings-config/repo-setings",
               "settings-config/env-vats",
               "settings-config/prompt-memory", 
               "settings-config/teams"
             ]
           },
           {
-            "group": "Configuration",
+            "group": "Help",
             "pages": [
-              "configuration/models",
-              "configuration/prompt",
-              "configuration/memory",
-              "configuration/git-settings",
-              "configuration/issues-tracker"
-            ]
-          },
-          {
-            "group": "Admin",
-            "pages": [
-              "admin/teams",
-              "admin/support"
+              "help/best-practice",
+              "help/support"
             ]
           }
         ]
