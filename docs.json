@@ -25,11 +25,17 @@
             ]
           },
           {
-            "group": "Development Environment",
+            "group": "Settings & Config",
             "pages": [
-              "dev-env/setup-agent",
-              "dev-env/vm",
-              "dev-env/env-vars"
+              "settings-config/models",
+              "settings-config/workspace-settings",
+              "settings-config/repo-setings",
+              "settings-config/vm",
+              "settings-config/setup-agent",
+              "settings-config/repo-setings",
+              "settings-config/env-vats",
+              "settings-config/prompt-memory", 
+              "settings-config/teams"
             ]
           },
           {
