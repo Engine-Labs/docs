@@ -13,9 +13,7 @@
       {
         "tab": "Documentation",
         "pages": [
-          "introduction"
-        ],
-        "groups": [
+          "introduction",
           {
             "group": "Essentials",
             "pages": [
@@ -27,8 +25,8 @@
           {
             "group": "Integrations",
             "pages": [
-              "integrations/API",
-              "integrations/MCP"
+              "integrations/api",
+              "integrations/mcp"
             ]
           },
           {
@@ -36,23 +34,21 @@
             "pages": [
               "settings-config/models",
               "settings-config/workspace-settings",
-              "settings-config/repo-setings",
+              "settings-config/repo-settings",
               "settings-config/vm",
               "settings-config/setup-agent",
-              "settings-config/env-vats",
-              "settings-config/prompt-memory", 
+              "settings-config/env-vars",
+              "settings-config/prompt-memory",
               "settings-config/teams"
             ]
           },
           {
             "group": "Help",
             "pages": [
-              "help/best-practice",
+              "help/best-practices",
               "help/support"
             ]
-          }
-        ],
-        "pages": [
+          },
           "pricing",
           "privacy",
           "soc2"
