@@ -56,7 +56,7 @@
       },
       {
         "tab": "Changelog",
-        "pages": "changelog/changelog"
+        "pages": [ "changelog/changelog" ]
       }
     ],
     "global": {
