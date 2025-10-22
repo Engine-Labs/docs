@@ -1,6 +1,31 @@
 ---
 title: "Changelog"
-description: "Description of your new file."
 ---
 
-Coming soon.
+# October 22nd 2025
+
+## Access & onboarding
+
+- Invite UX: add invite button; generate all available codes.
+- Team invites: invited team members no longer need codes.
+- Sign-up protections to block bots.
+
+## Draft tasks & task UX
+
+- Prevent multiple tasks per draft.
+- Save draft edits on start; show actionable controls only when valid.
+
+## Models & routing
+
+- Add AWS Bedrock for Anthropic model failover.
+- Better labels & long-chat handling; include model name in system prompt.
+
+## GitHub & repos
+
+- Fix Start GitHub issue from @cto tag.
+- Branch selector no longer crashes if branch deleted.
+
+## Reliability & safety
+
+- Fewer flaky runs: increase events timeout; harden Git token fetching/retries; empty-repo/default-branch fixes.
+- Auto-ban abusive engine-agent chat calls (unknown adapter/invalid schema).
