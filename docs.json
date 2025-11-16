@@ -70,6 +70,11 @@
           "anchor": "Documentation",
           "href": "https://docs.cto.new",
           "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Changelog",
+          "href": "https://docs.cto.new/changelog",
+          "icon": "logs"
         }
       ]
     }
