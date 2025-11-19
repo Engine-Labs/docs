@@ -26,7 +26,8 @@
             "group": "Integrations",
             "pages": [
               "integrations/API",
-              "integrations/MCP"
+              "integrations/MCP",
+              "integrations/cto-MCP"
             ]
           },
           {
