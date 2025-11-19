@@ -1,0 +1,47 @@
+---
+title: "cto.new MCP Server"
+icon: "satellite-dish"
+description: "Connect to cto.new from other tools via MCP"
+---
+
+## Functionality
+
+The MCP server lets you access select cto.new functionality. Currently you can:
+
+- List repos/projects configured with cto.new
+- List tasks previously run (overview of 10 most recent tasks with status, PR, etc)
+- Start a task (provide a prompt to start a remote task in cto.new)
+
+<Warning>
+  The MCP server is in beta
+</Warning>
+
+## Auth
+
+Authentication is done via OAuth which your client must support. Clients with this support include:
+
+- Cursor
+- VSCode
+- Claude
+
+## Setup
+
+Our MCP sever supports streamable HTTP transport only.
+
+You can access the MCP server here:
+
+`https:///mcp.enginelabs.ai/mcp`
+
+Here is an example `.cursor/mcp.json` file:
+
+```
+{
+  "mcpServers": {
+    "cto-new": {
+      "url": "https:///mcp.enginelabs.ai/mcp"
+    }
+  }
+}
+```
+
+Our MCP server is remote only. You may like to try something like [this](https://github.com/geelen/mcp-remote) to use it locally. 
