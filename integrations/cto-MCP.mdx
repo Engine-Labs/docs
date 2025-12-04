@@ -37,11 +37,24 @@ Here is an example `.cursor/mcp.json` file:
 ```
 {
   "mcpServers": {
-    "cto-new": {
+    "cto.new": {
       "url": "https://mcp.enginelabs.ai/mcp"
     }
   }
 }
 ```
 
-Our MCP server is remote only. You may like to try a local wrapper to use it locally.
+Our MCP server is remote only.
+
+For clients that do not natively support OAuth with HTTP transport MCP servers, you can use the `mcp-remote` package to wrap the MCP server:
+
+```
+{
+  "mcpServers": {
+    "cto.new": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.enginelabs.ai/mcp"]
+    }
+  }
+}
+```
