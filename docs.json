@@ -19,6 +19,7 @@
             "pages": [
               "essentials/chats",
               "essentials/tasks",
+              "essentials/live-preview",
               "essentials/repos"
             ]
           },
