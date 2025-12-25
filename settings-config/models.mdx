@@ -5,25 +5,29 @@ icon: "robot"
 
 cto.new works with the best frontier LLMs for chat and code generation.
 
-Chat supports:
+Auto model automatically routes your task to the best frontier LLM, balancing performance, cost, speed, and capacity. Premium customers can choose which model to use for each task.
 
-- Anthropic Sonnet 4.5 (default)
-- OpenAI GPT-5
+<Warning>
+  Be prepared to experiment with settings when choosing your own model. Performance may vary.
+</Warning>
 
-Planning and coding agents support:
+cto.new supports:
 
-- GPT-5-Codex (default)
-- GPT-5
-- Anthropic Claude 4.5 Sonnet
-- Google Gemini 2.5 Pro
-- Sonnet 4.5 - GPT-5-Codex Alloy
+- Claude Sonnet 4.5 
+- Claude Opus 4.5
+- Claude Haiku 4.5
+- GPT-5.2
+- GPT-5.1 Codex
+- GPT-5.1 Codex Mini
+- GLM 4.7
+- Devstral 2
+- Minimax M2.1
+- Kimi K2 Thinking
+- Gemini 3 Pro Preview
+- Gemini 3 Flash Preview
+- Sonnet 4.5 - GPT-5.2 Alloy
+- Sonnet 4.5 - GPT-5.1 Codex Alloy
 
 <Note>
   Model alloys combine two LLM models in the same agent thread. Our research shows it improves performance by several percentage points.
 </Note>
-
-You can set the model for planning and coding on a per repo basis from the repository settings menu.
-
-<Warning>
-  Performance may vary. Be prepared to experiment with settings when changing models
-</Warning>
