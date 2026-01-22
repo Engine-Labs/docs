@@ -18,7 +18,7 @@ cto.new will automatically resize your VM's memory to meet the needs of your pro
 
 Install and configure software, tools, and packages required at the system level.
 
-For example, this system setup configration installs Node 18 and configures a database to run tests:
+For example, this system setup configuration installs Node 18 and configures a database to run tests:
 
 ```[expandable]
 # Downgrade to Node v18
@@ -31,7 +31,7 @@ export PGPASSWORD=postgres && psql -U postgres -c "CREATE DATABASE test_db;"
 npm run migrate
 ```
 
-Every VM has the following base system specification by deault.
+Every VM has the following base system specification by default.
 
 <Accordion title="VM base specifications" icon="notes">
   - CPU: 2vCPU
@@ -42,9 +42,9 @@ Every VM has the following base system specification by deault.
   - **Base Image**: Ubuntu 24.04
   - **Default User**: `engine` (UID: 1030)
   - **Architecture**: x64
-  
+
   ## Pre-installed System Packages
-  
+
   ### Development Tools & Utilities
   - Build Essential Tools (`build-essential`)
   - Git
@@ -56,26 +56,26 @@ Every VM has the following base system specification by deault.
   - tree
   - tmux
   - lsof
-  
+
   ### Package Management
   - `software-properties-common`
   - `apt-utils`
-  
+
   ### Security & System
   - OpenSSH Server
   - sudo
   - SSL development libraries (`libssl-dev`)
-  
+
   ### Database
   - SQLite3 3.45.1 & SQLite3 development libraries
-  
+
   ### Programming Languages & Runtimes
   - Python 3 (with pip, venv, and UV v0.7.6)
   - Node.js v20.18.3
     - npm v11.1.0
     - yarn v1.22.22
   - Bun runtime v1.2.17
-  
+
   ## Environment Configuration
   - Default shell: bash
   - Bash profile `/home/engine/.bash_profile`
@@ -118,7 +118,7 @@ Live preview requires build and run steps. These must run successfully for the a
 
 ### Task Runner Test
 
-Run a test to verify your task runner is configured properly and cto.new can successfuly make commits.
+Run a test to verify your task runner is configured properly and cto.new can successfully make commits.
 
 Running a test can take several minutes but can be manually stopped.
 
