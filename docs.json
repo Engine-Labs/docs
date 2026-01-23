@@ -14,6 +14,7 @@
         "tab": "Documentation",
         "pages": [
           "introduction",
+          "introduction-fr",
           {
             "group": "Essentials",
             "pages": [
@@ -108,3 +109,4 @@
     }
   }
 }
+
