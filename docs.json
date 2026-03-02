@@ -9,6 +9,25 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "house",
+          "href": "https://cto.new/"
+        },
+        {
+          "anchor": "Documentation",
+          "icon": "book-open-cover",
+          "href": "https://docs.cto.new"
+        },
+        {
+          "anchor": "Changelog",
+          "icon": "edit",
+          "href": "https://docs.cto.new/changelog"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Documentation",
@@ -17,6 +36,7 @@
           {
             "group": "Essentials",
             "pages": [
+              "essentials/projects",
               "essentials/chats",
               "essentials/tasks",
               "essentials/live-preview",
@@ -59,28 +79,11 @@
       },
       {
         "tab": "Changelog",
-        "pages": [ "changelog" ]
+        "pages": [
+          "changelog"
+        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "href": "https://cto.new/",
-          "icon": "house"
-        },
-        {
-          "anchor": "Documentation",
-          "href": "https://docs.cto.new",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Changelog",
-          "href": "https://docs.cto.new/changelog",
-          "icon": "edit"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
