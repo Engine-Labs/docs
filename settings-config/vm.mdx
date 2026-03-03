@@ -4,7 +4,7 @@ description: "cto.new's development environment"
 icon: "computer-classic"
 ---
 
-cto.new works in a cloud virtual machine that we call a **'task runner'**.
+For connected repos, cto.new works in a cloud virtual machine that we call a **'task runner'**.
 
 Properly configuring the task runner with system setup, project dependencies, and code checks will significantly improve the agent's work.
 
@@ -12,7 +12,7 @@ Properly configuring the task runner with system setup, project dependencies, an
   cto.new can attempt to configure its own task runner using the setup agent
 </Check>
 
-cto.new will automatically resize your VM's memory to meet the needs of your project in increments of 2Gb from 4Gb to a maximum of 16Gb. Users that require more than 16Gb of memory should [contact us](/help/support).
+cto.new will automatically resize your VM's memory to meet the needs of your project.
 
 ### System Setup
 
@@ -33,7 +33,7 @@ npm run migrate
 
 Every VM has the following base system specification by default.
 
-<Accordion title="VM base specifications" icon="notes">
+<Accordion icon="notes" title="VM base specifications">
   - CPU: 2vCPU
   - Memory: 4Gb autoscaling up to 16Gb
 
@@ -42,9 +42,9 @@ Every VM has the following base system specification by default.
   - **Base Image**: Ubuntu 24.04
   - **Default User**: `engine` (UID: 1030)
   - **Architecture**: x64
-
+  
   ## Pre-installed System Packages
-
+  
   ### Development Tools & Utilities
   - Build Essential Tools (`build-essential`)
   - Git
@@ -56,26 +56,26 @@ Every VM has the following base system specification by default.
   - tree
   - tmux
   - lsof
-
+  
   ### Package Management
   - `software-properties-common`
   - `apt-utils`
-
+  
   ### Security & System
   - OpenSSH Server
   - sudo
   - SSL development libraries (`libssl-dev`)
-
+  
   ### Database
   - SQLite3 3.45.1 & SQLite3 development libraries
-
+  
   ### Programming Languages & Runtimes
   - Python 3 (with pip, venv, and UV v0.7.6)
   - Node.js v20.18.3
     - npm v11.1.0
     - yarn v1.22.22
   - Bun runtime v1.2.17
-
+  
   ## Environment Configuration
   - Default shell: bash
   - Bash profile `/home/engine/.bash_profile`
@@ -111,10 +111,6 @@ npm run build
 # Run tests
 npm run test
 ```
-
-### Live Preview steps
-
-Live preview requires build and run steps. These must run successfully for the app to be runnable in live preview.
 
 ### Task Runner Test
 

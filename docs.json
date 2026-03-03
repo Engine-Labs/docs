@@ -36,10 +36,16 @@
           {
             "group": "Essentials",
             "pages": [
-              "essentials/projects",
-              "essentials/chats",
-              "essentials/tasks",
-              "essentials/live-preview",
+              {
+                "group": "Projects",
+                "expanded": true,
+                "pages": [
+                  "blank-project",
+                  "web-app",
+                  "open-claw",
+                  "mobile-app"
+                ]
+              },
               "essentials/repos"
             ]
           },
@@ -64,13 +70,7 @@
               "settings-config/teams"
             ]
           },
-          {
-            "group": "Help",
-            "pages": [
-              "help/best-practice",
-              "help/support"
-            ]
-          },
+          "support",
           "fair-use",
           "pricing",
           "privacy",
