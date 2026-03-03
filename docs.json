@@ -76,6 +76,12 @@
           "privacy",
           "soc2"
         ]
+      },
+      {
+        "tab": "Changelog",
+        "pages": [
+          "changelog"
+        ]
       }
     ]
   },
