@@ -73,7 +73,6 @@
           "support",
           "fair-use",
           "pricing",
-          "privacy",
           "cli"
         ]
       },
@@ -109,5 +108,6 @@
       "linkedin": "https://www.linkedin.com/company/enginelabs",
       "discord": "https://discord.gg/cto"
     }
-  }
+  },
+  "description": "Build apps, agents and startups on the best AI models. No credit card or API key required."
 }
