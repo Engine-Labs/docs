@@ -96,6 +96,159 @@
               "support"
             ]
           },
+          {
+            "group": "",
+            "pages": [
+              "cli"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "models",
+              "settings"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "fair-use",
+              "pricing"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "support"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              {
+                "group": "Projects",
+                "expanded": true,
+                "pages": [
+                  "blank-project",
+                  "web-app",
+                  "open-claw",
+                  "mobile-apps"
+                ]
+              },
+              "essentials/repos"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/API",
+              "integrations/MCP",
+              "integrations/cto-MCP"
+            ]
+          },
+          {
+            "group": "Settings & Config",
+            "pages": [
+              "settings-config/models",
+              "settings-config/workspace-settings",
+              "settings-config/repo-settings",
+              "settings-config/vm",
+              "settings-config/setup-agent",
+              "settings-config/env-vars",
+              "settings-config/prompt-memory",
+              "settings-config/teams"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "cli"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "models",
+              "settings"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "fair-use",
+              "pricing"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "support"
+            ]
+          },
+          "introduction",
+          {
+            "group": "Essentials",
+            "pages": [
+              {
+                "group": "Projects",
+                "expanded": true,
+                "pages": [
+                  "blank-project",
+                  "web-app",
+                  "open-claw",
+                  "mobile-apps"
+                ]
+              },
+              "essentials/repos"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/API",
+              "integrations/MCP",
+              "integrations/cto-MCP"
+            ]
+          },
+          {
+            "group": "Settings & Config",
+            "pages": [
+              "settings-config/models",
+              "settings-config/workspace-settings",
+              "settings-config/repo-settings",
+              "settings-config/vm",
+              "settings-config/setup-agent",
+              "settings-config/env-vars",
+              "settings-config/prompt-memory",
+              "settings-config/teams"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "cli"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "models",
+              "settings"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "fair-use",
+              "pricing"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "support"
+            ]
+          },
           "introduction",
           {
             "group": "Essentials",
