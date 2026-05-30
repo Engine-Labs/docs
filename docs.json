@@ -70,11 +70,33 @@
               "settings-config/teams"
             ]
           },
-          "support",
-          "fair-use",
-          "pricing",
-          "privacy",
-          "cli"
+          {
+            "group": "",
+            "pages": [
+              "cli"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "models",
+              "settings"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "fair-use",
+              "pricing",
+              "privacy"
+            ]
+          },
+          {
+            "group": "",
+            "pages": [
+              "support"
+            ]
+          }
         ]
       },
       {
