@@ -2,6 +2,36 @@
 title: "Changelog"
 ---
 
+# June 5th 2026
+
+### Product and UX
+
+- Launched the first version of the CTO CLI.
+- Added private marketplace listings, editable listings, AI-generated listing descriptions, clearer seller-country support, and better listing markdown.
+- Replaced business “goals” with clearer business plans.
+- Added a lead chat model switcher, reset chat, stop button, better task viewing, improved repo access, and clearer handling for pending approvals in Agent Teams.
+- Expanded mobile support across AI businesses, recent tasks, reset chat, business views, and marketplace flows.
+- Added recent tasks to the main business/headquarters views.
+
+### Chat, agents, and models
+
+- Improved chat compaction, pagination, scrollback, and message storage so long-running business and agent team sessions are less likely to lose context.
+- Added DeepSeek V4 Flash, Claude Opus 4.8, Gemini 3.5 Flash.
+- Fixed agent image generation, Gemini/Anthropic image handling, and large file/image memory issues.
+- Improved Agentmail inbox provisioning, webhook handling, safety controls, and paused-team behavior.
+
+### Integrations and developer experience
+
+- Moved MCPs/integrations into business views, and improved setup copying, permissions, and compatibility with the latest MCP SDK.
+- Improved repo access handling, connect-repo prompts, and marketplace/business repo flows.
+
+### Reliability
+
+- Added sandbox backup, recovery, upgrade, and migration flows.
+- Improved sandbox health checks, restart behavior, workload containment, process handling, and observability.
+- Improved handling for provider timeouts, client disconnects, memory pressure, and websocket backpressure.
+- Reduced memory usage across chats, images, previews, and agent sessions; moved more message history out of large JSON blobs.
+
 # April 30th 2026
 
 ### Product and UX
