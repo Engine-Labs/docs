@@ -32,49 +32,37 @@
       {
         "tab": "Documentation",
         "pages": [
-          "introduction",
           {
-            "group": "Essentials",
+            "group": "AI Business",
             "pages": [
-              {
-                "group": "Projects",
-                "expanded": true,
-                "pages": [
-                  "blank-project",
-                  "web-app",
-                  "open-claw",
-                  "mobile-apps"
-                ]
-              },
-              "essentials/repos"
+              "essentials/overview",
+              "settings-config/models",
+              "essentials/marketplace",
+              "essentials/troubleshooting"
             ]
           },
           {
             "group": "Integrations",
             "pages": [
               "integrations/API",
-              "integrations/MCP",
-              "integrations/cto-MCP"
+              "integrations/MCP"
             ]
           },
           {
-            "group": "Settings & Config",
+            "group": "CLI",
             "pages": [
-              "settings-config/models",
-              "settings-config/workspace-settings",
-              "settings-config/repo-settings",
-              "settings-config/vm",
-              "settings-config/setup-agent",
-              "settings-config/env-vars",
-              "settings-config/prompt-memory",
-              "settings-config/teams"
+              "cli",
+              "troubleshooting"
             ]
           },
-          "support",
-          "fair-use",
-          "pricing",
-          "privacy",
-          "cli"
+          {
+            "group": "Support",
+            "pages": [
+              "support",
+              "fair-use",
+              "pricing"
+            ]
+          }
         ]
       },
       {
