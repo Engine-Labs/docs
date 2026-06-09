@@ -36,9 +36,14 @@
             "group": "AI Business",
             "pages": [
               "essentials/overview",
+              "essentials/headquarters",
+              "essentials/plan",
+              "essentials/tasks",
+              "essentials/inbox",
+              "essentials/files",
+              "essentials/settings",
               "settings-config/models",
               "essentials/marketplace",
-              "essentials/settings",
               "essentials/troubleshooting"
             ]
           },
