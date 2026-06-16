@@ -55,13 +55,6 @@
             ]
           },
           {
-            "group": "CLI",
-            "pages": [
-              "cli",
-              "troubleshooting"
-            ]
-          },
-          {
             "group": "Support",
             "pages": [
               "support",
