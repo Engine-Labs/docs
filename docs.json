@@ -44,8 +44,7 @@
               "essentials/files",
               "essentials/settings",
               "settings-config/models",
-              "essentials/marketplace",
-              "essentials/troubleshooting"
+              "essentials/marketplace"
             ]
           },
           {
@@ -58,6 +57,7 @@
           {
             "group": "Support",
             "pages": [
+              "essentials/troubleshooting",
               "support",
               "acceptable-use-policy",
               "fair-use",
