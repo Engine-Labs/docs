@@ -39,13 +39,13 @@
               "essentials/headquarters",
               "essentials/plan",
               "essentials/tasks",
+              "essentials/finance",
               "essentials/inbox",
               "essentials/files",
               "essentials/settings",
               "settings-config/models",
               "essentials/marketplace",
-              "essentials/troubleshooting",
-              "essentials/finance"
+              "essentials/troubleshooting"
             ]
           },
           {
