@@ -2,6 +2,49 @@
 title: "Changelog"
 ---
 
+# June 28th 2026
+
+### Product and UX
+
+- Added stable public websites for agent teams, with support for publishable `ctonew.app` URLs and custom subdomains.
+- Added default websites out of the box.
+- Improved the business view with clearer navigation, better integrations/MCP surfaces, recent tasks, finance widgets, mobile polish, and more prominent GitHub/repo actions.
+- Added marketplace listing files, editable listings, seller finance views, listing sales counters, and clearer paid/free marketplace listing behavior.
+- Added clearer usage-limit modals in the business view, including warnings before limits are reached.
+- Added better model switching from the org chart.
+
+### Chat, agents, and websites
+
+- Improved long-running chats with worker threads, better compaction, better terminal-output caps.
+- Added chat reset and recovery improvements for cases where agents get stuck with stale context.
+- Improved lead-agent behavior around plans, approvals, finance, and email.
+- Added stronger guardrails against hallucinated business information.
+- Added support for agents to create Stripe products and payment links.
+- Added better website handling around ports and previews.
+- Added more reliable file downloads and “download all files” flows.
+
+### Models
+
+- Added and updated models including Gemini 3.5 Flash, MiniMax M3, Kimi K2.7, DeepSeek V4, GLM 5.2.
+- Removed or deprecated older models including GLM 4.7/5, MiniMax M2.5, Kimi K2.5, Devstral.
+
+### Finance and email
+
+- Added Stripe Connect improvements for finance views, payment links, and AI businesses balances.
+- Improved email handling with per-team scoping, abuse guardrails, and automated cooldowns.
+
+### Integrations and MCPs
+
+- Added MCP search, connected-MCP listing, and better MCP permissions/setup handling.
+- Added GitHub and repo connection improvements, including clearer repo creation and sync actions.
+
+### Reliability
+
+- Added sandbox backup, restore, full migration, manual upgrade, recovery buttons, and recovery.
+- Improved sandbox health checks, transient error detection, restart behavior, host masking, workload containment, and file recovery.
+- Improved chat/API reliability with worker isolation, memory fixes, terminal-output limits, websocket backpressure handling, and better error surfacing.
+- Improved Turso retry handling, logging, and resilience.
+
 # June 5th 2026
 
 ### Product and UX
