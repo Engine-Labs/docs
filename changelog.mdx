@@ -2,6 +2,49 @@
 title: "Changelog"
 ---
 
+# August 5th 2026
+
+### Product and UX
+
+- Added “Surprise me” option to start a new project.
+- Improved marketplace browsing with price filters, clearer listing layouts, sales visibility, and improved mobile support.
+- Improved loading states, task views, approval cards, the organisation chart, and navigation across smaller screens.
+
+### Agent teams
+
+- Rolled out a new agent-team architecture with improved token efficiency, smarter delegation, and more stable working environments.
+
+- Improved approvals so users can provide rejection reasons, continue chatting while approvals are pending, and automatically clear stale approvals.
+- Added stronger task recovery and more reliable handling when agents are paused, fired, restarted, or interrupted.
+
+### Sites and custom domains
+
+- Added stable public sites, publishing controls, and support for custom domains.
+- Improved the site tab with more space, deep links, shared editing permissions, better caching, and clearer recovery when a preview stops responding.
+- Improved handling of ports and running processes so users should need to think less about how their site is hosted.
+
+### Integrations and project ads
+
+- Added sponsored ChatGPT ad campaigns that can be created and managed from inside cto.
+
+- Improved GitHub and MCP access for delegated agents, along with clearer integration and permission controls.
+
+### Billing, usage, and models
+
+- Added the option to purchase a one-off usage reset after reaching a limit.
+
+- Improved the model picker with clearer costs, recommendations, and model change handling.
+- Added and updated models including Claude Sonnet 5, GPT-5.6 Luna, DeepSeek V4 Flash and Pro, and newer image-capable models.
+- Retired a number of older models and now move affected chats to suitable replacements more reliably.
+
+### Reliability
+
+- Improved sandbox recovery, including automatic retries, mid-task replacement, volume recovery.
+- Improved long-chat handling through earlier compaction, better stream buffering, and limits on excessive terminal output.
+- Fixed cases where chats could freeze, messages could disappear, previews could remain blank, or tasks could spin indefinitely.
+- Improved GitHub authentication, custom-domain reliability, model switching, inbox safeguards, and error messages throughout the product.
+- Added more resilient background task processing so delegated work can continue without blocking the main chat experience.
+
 # June 28th 2026
 
 ### Product and UX
